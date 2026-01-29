@@ -23,6 +23,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/users")
+@CrossOrigin(origins ={"https://elitemart-snqm.onrender.com"})
 public class UserController {
 	@Autowired
 	private UserService userService;
@@ -187,3 +188,4 @@ public class UserController {
 	}
 
 }
+
